@@ -3,7 +3,7 @@
 #include<stdio.h>
 void main()
 {
-    int n,i,sum=0,arr[20];
+    int n,i,sum=0,arr[20],j=0,add=0;
 
     printf("Enter the size of array: ");
     scanf("%d",&n);
@@ -12,9 +12,15 @@ void main()
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
-        sum=sum+arr[i];
+        
+    }
+    while(j<n)
+    {
+        add=add+a[j];
+        j++;
     }
 
-    printf("Sum of all elements of the array is %d",sum);
+    printf("Sum of all elements of the array is %d",add);
+    return 0;
 
 }
